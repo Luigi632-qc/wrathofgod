@@ -1,0 +1,172 @@
+1 | P a g e                                                                                          Enumerating and Breaking VoIP 
+ 
+Enumerating and Breaking VoIP 
+Introduction 
+Voice over Internet Protocol (VoIP) has seen rapid implementation over the past few years. Most of 
+the  organizations  which  have  implemented  VoIP  are  either  unaware  or  ignore  the  security  issues 
+with  VoIP  and  its  implementation.  Like  every  other  network,  a  VoIP  network  is  also  susceptible  to 
+abuse. In this article, I would discuss about various enumeration techniques followed by 
+demonstration of few VoIP attacks. I deliberately will not go to protocol level details as this article is 
+aimed  at  Penetration  Testers  who  want  to  get  a  taste  of  the  basics  first,  though  it  is  strongly 
+encouraged to understand the protocols used in VoIP networks. 
+Possible attacks against VoIP 
+ Denial of Service (DoS) attacks 
+ Registration Manipulation and Hijacking 
+ Authentication attacks 
+ Caller ID spoofing 
+ Man-in-the-middle attacks 
+ VLAN Hopping 
+ Passive and Active Eavesdropping 
+ Spamming over Internet Telephony (SPIT) 
+ VoIP phishing (Vishing) 
+Lab Setup for VoIP Testing 
+For this article, I have used the following lab setup to demonstrate various security issues in VoIP.  
+ Trixboxi (192.168.1.6) – open source IP-PBX server 
+ Backtrack 4 R2  (192.168.1.4) - Attacker machine 
+ ZoIPerii (192.168.1.3) – Windows softphone (User A - Victim) 
+ Linphoneiii (192.168.1.8) – Windows softphone(User B - Victim) 
+ 
+ Enumeration 
+Enumeration  is the  key  to every  successful  attack/penetration  test  as  it  provides  the much  needed 
+details and overview of the setup, VoIP is not different. In VoIP network, information useful to us as 
+an attacker is VoIP  gateway/servers, IP-PBX  systems, client  software  (softphones)/VoIP  phones and 
+user extensions. Let’s  have  a  look  at  some  of  the  widely  used  tools  for  enumeration  and 
+fingerprinting. For the sake of demonstration, let’s assume that we know the IP addresses of devices 
+already 
+ Smap Smapiv scans a single IP or subnet of IP addresses for SIP enabled devices. Let us use smap against 
+the  IP-PBX  server.  Figure  2  shows  that  we  have  successfully  enumerated  the  server  and  User-
+Agent details are available.
+
+Svmap Svmap is another powerful scanner from sipviciousv suite of tools. We can set the type of request 
+being  sent  while  enumerating  SIP  devices  using  this  tool.  The  default  request  type  is  OPTIONS. 
+Let’s run the tool on a pool of 20 devices. As we can see,  svmap  is  able  to  detect  IP-
+addresses and their User-Agent details. 
+
+ Swar During VoIP enumeration, extension enumeration is important to identify  the  live  SIP extensions. 
+Swarvi aides in scanning complete range of IP addresses. shows a scan for user extensions 
+from 200 to 300. The result is user extensions which were registered with IP-PBX server. 
+
+So  we  had  a  look  at  enumerating  VoIP  setup  and  got  some  interesting  details.  Now  let’s  use  these 
+details to attack the setup.
+
+Attacking VoIP 
+As  already  discussed,  VoIP  network  is  prone  to  a  number  of  security  threats  and  attacks.  For  this 
+article,  we  will  have  a  look  at  three  critical  VoIP  attacks  which  could  target  the  integrity  and 
+confidentiality of the VoIP infrastructure. The following attacks are demonstrated in the coming sections: 
+1.  Attacking VoIP authentication 
+2.  Eavesdropping via ARP spoofing 3.  
+Caller ID impersonation
+
+1.  Attacking  VoI P  aut henticat io n  
+When a new or existing VoIP phone is connected to the network, it sends a REGISTER request to the 
+IP-PBX server for registering the associated user ID/extension number. This register requests 
+contains important details (like  user  information, authentication data etc.) which could be much of 
+an  interest  of  an  attacker  or  a  penetration  tester.shows  the  packet  capture  of  SIP 
+authentication request. This packet capture contains very juicy information. Let’s  use  the 
+information from the packet capture to for executing the authentication attack. 
+
+ 
+Attack demonstration 
+Attack Scenario 
+
+Step1:  For  the  purpose  of  demonstration,  let  us  assume  that  we  have  physical  access  to  VoIP 
+network.  Now,  using  the  tools  and  techniques  described  in  previous  sections  of  this  article  we  will 
+perform the scanning and enumeration to obtain the following details: 
+ IP address of SIP server 
+ Existing user Ids/extensions Good, now we will start scanning the VoIP IP addresses to capture registration requests. 
+Step2:  Using  wiresharkvii  let  us  capture  some  register  requests.  We  will  save  it  to  a  file  named 
+auth.pcap.  Figure 6 shows the wireshark capture file (auth.pcap) 
+
+Step3: Now we will use sipcrack suiteviii. The suite of tools is available in Backtrack under 
+/pentest/VoIP directory. Figure 7 shows the tools from sipcrack suite of tools.
+
+Step4: Using sipdump tool, let’s dump the authentication data to a file and name it auth.txt. Figure 8 
+shows the wireshark capture file containing authentication data for User 200.
+
+Step5: This authentication data includes user ID, SIP extension, password hash (MD5) and victim’s IP 
+address. We will now use sipcrack tool to crack  the authentication  hashes using a custom word list 
+to guess the hashes. Figure 9 shows a custom word list named as wordlist.txt which will be used for 
+cracking the authentication hashes. We will store the results from this activity in file named auth.txt
+
+Step6:  Neat,  we  have  passwords  for  the  extensions  now.  We  can  use  this  information  by  re-
+registering to IP-PBX server from our own SIP phone. This will allow us to perform these activities: 
+ Impersonate legitimate user and call other users. 
+ Sniff  or  manipulate  legitimate  calls,  originating  from  and  coming  to  the victim’s extension 
+(User A in this case)
+
+2. Eav esdropp ing  v ia Arp spo ofing  
+All network hardware devices have a unique MAC address. Like all network devices, VoIP phones are 
+also  vulnerable  to  MAC/ARP  spoofing  attacks.  For  this  section,  we  will  look  at  sniffing  active  voice 
+calls by eavesdropping and recording live VoIP conversation. 
+
+Attack Demonstration 
+Attack Scenario
+
+7 | P a g e                                                                                          Enumerating and Breaking VoIP 
+ 
+Step6:  Neat,  we  have  passwords  for  the  extensions  now.  We  can  use  this  information  by  re-
+registering to IP-PBX server from our own SIP phone. This will allow us to perform these activities: 
+ Impersonate legitimate user and call other users. 
+ Sniff  or  manipulate  legitimate  calls,  originating  from  and  coming  to  the victim’s extension 
+(User A in this case).  
+2. Eav esdropp ing  v ia Arp spo ofing  
+All network hardware devices have a unique MAC address. Like all network devices, VoIP phones are 
+also  vulnerable  to  MAC/ARP  spoofing  attacks.  For  this  section,  we  will  look  at  sniffing  active  voice 
+calls by eavesdropping and recording live VoIP conversation. 
+Attack Demonstration 
+Attack Scenario
+Figure 11 
+ 
+Step1:  For  the  purpose  of  demonstration,  let’s assume that we have identified victim’s IP address 
+using the techniques described earlier. Then, using ucsniffix an ARP poisoning tool, we will spoof the 
+victim’s MAC address.  
+Step2:  It  is  important  to  identify  the  MAC  address  of  the  target  which  is  required  to  be  poisoned. 
+Although,  above  mentioned  tools  have  the  capability  to  identify  MAC  automatically,  it  is  always  a 
+good  practice  to  identify  MAC  separately  too.  Let’s use nmapx  for  that.  Figure  11  shows  an  nmap 
+scan against the victim’s IP address and its MAC address. 
+
+Step3:  Now  we  have  MAC  address of the victim, let us use ucsniff to spoof victim’s MAC address. 
+ucsniff  tool  has  various  modes  for  spoofing  (i.e.  Monitor  mode,  learning  mode  and  MiTM  mode). 
+Let’s use MiTM mode by specifying victim’s IP address and SIP extension in a file named targets.txt. 
+This mode ensures that only calls (to and fro) to victim (User A) are eavesdropped without affecting 
+other traffic in the network. Figure 12 and figure 13 show that ucsniff has poisoned victim’s (User A) 
+MAC address.  
+
+Step4:  We have successfully spoofed the Victim’s MAC address and are ready to sniff calls to  and 
+from User A’s VoIP phone. 
+Step5:  Now,  when  user  B  calls  User  A  and  starts  their  conversation  and  ucsniff  records  their 
+conversation.  When  the  call  is  finished,  ucsniff  stores  all  the  recorded  conversation  in  a  wav  file. 
+, shows ucsniff has detected a new call to extension 200 from extension 202. 
+
+Step6: When we  are done, we would run ucnisff again with  –q option to stop spoofing the  MAC of 
+the system to ensure that everything remains fine after our attack. 
+
+Step7:  The  saved  sound  file  could  be  played  using  well  known  audio  players  (like  windows  media 
+player etc.) 
+
+3. Caller  I D spoof ing  
+
+This  is  one  of  the  easiest  attacks  on  VoIP  networks.  Caller  ID  spoofing  creates  a scenario where  an 
+unknown  user  may  impersonate  a  legitimate  user  to  call  other  legitimate  users  on  VoIP  network. 
+Slight  changes  in  INVITE  request  would  result  in  this  attack.  There  are  numerous  ways  to  craft  a 
+malformed  SIP  INVITE  messages  (e.g.  scapy,  SIPp  etc.).  For  demonstration,  let’s use metasploit’sxi 
+auxiliary module named sip_invite_spoof.  
+
+Attack Scenario
+
+Step1: Let’s start our metasploit and load voip/sip_invite_spoof  auxiliary module.  
+Step2: Next, we will configure the option MSG to User B. This enables us to impersonate as User B. 
+Also, configure the User A’s IP address in the option RHOSTS. After configuring the module, let’s run 
+the auxiliary module. Figure 17 shows all the configuration setting.
+ 
+Step3: Auxiliary module will send a spoofed invite request to the victim (User A). Victim will receive a 
+call from my VoIP phone and answers the call with an impression that he is talking to User B.  Figure 
+18 shows the VoIP phone of victim (User A) who is receiving a call from User B (spoofed by me)
+
+Step4: Now, User A considers it as legitimate call from User B. User A will start communicating with 
+User B.  
+Conclusion 
+Number  of  security  threats  exist  related  to  VoIP.  Using  enumeration,  crucial  information  regarding 
+VoIP network, user Ids/extensions, phone types etc can be obtained. With use of specific tools, it is 
+possible to attack authentication, hijack VoIP calls, eavesdrop, and call manipulation, VoIP 
+spamming, VoIP phishing and IP-PBX server compromise. 
