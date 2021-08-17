@@ -1,0 +1,24 @@
+CryptoLocker è un tipo di ransomware progettato per infettare i computer attraverso un Trojan. È programmato per attaccare i sistemi Microsoft Windows e bloccare l'accesso ai file finché non viene pagato un riscatto agli autori del malware.
+
+Una volta installato, CryptoLocker crittografa determinati file rilevati sul computer infetto e visualizza una richiesta di riscatto a schermo, chiedendo centinaia di dollari in bitcoin per ricevere la chiave di decodifica.
+Funzionamento
+
+Il Trojan si diffonde come allegato e-mail e attraverso una botnet per la condivisione di file P2P. Viene eseguito quando la vittima apre il file ZIP allegato inserendo la password inclusa nel messaggio e tenta di aprire il PDF contenuto. CryptoLocker sfrutta il comportamento predefinito di Windows’ di nascondere l'estensione dai nomi dei file per mascherare la vera estensione .EXE del file dannoso.
+
+Una volta attivo, il malware crittografa determinati tipi di file memorizzati su unità di rete locali e montate utilizzando la crittografia a chiave pubblica RSA, conservando la chiave privata solo sui server di controllo del malware. CryptoLocker crittografa i file a un livello tale da renderli irrecuperabili, lasciando alle vittime solo due opzioni per recuperare l'accesso ai loro file: pagare il riscatto (senza una reale garanzia che il pagamento rilascerà effettivamente i file) o ripristinarli da copie di backup.
+
+Tuttavia, gli sforzi congiunti delle forze di polizia di più paesi hanno consentito di accedere al database delle chiavi private utilizzate da CryptoLocker. Questo database è stato a sua volta utilizzato per creare uno strumento online per il recupero delle chiavi e dei file senza dover pagare il riscatto.
+Destinatari
+
+CryptoLocker funziona solo su PC con Windows XP, Vista, Windows 7 o Windows 8, poiché è progettato per sfruttare le funzionalità incluse in quei sistemi operativi. Non ha effetto su dispositivi Apple, smartphone o tablet.
+
+Secondo l'FBI e altre forze dell'ordine, gli operatori di CryptoLocker hanno estorto con successo milioni di dollari in pagamenti di riscatto. Entro la fine del 2013, pochi mesi dopo il rilascio, il malware aveva già infettato più di 235.000 computer.
+Come evitare CryptoLocker
+
+Questo malware si diffonde via e-mail utilizzando tecniche di ingegneria sociale. Segui questi suggerimenti per proteggerti da CryptoLocker:
+
+    Sii particolarmente diffidente con i messaggi di posta elettronica provenienti da mittenti sconosciuti’, in particolare quelli che contengono file allegati.
+    Disattiva le estensioni di file nascoste in Windows. Questo ti aiuterà a riconoscere un eventuale file dannoso usato nell'attacco.
+    Predisponi un sistema di backup per i file critici. Ciò contribuirà a mitigare il danno causato non solo da infezioni malware, ma anche da problemi hardware o altri incidenti.
+    Utilizza una soluzione di sicurezza professionale, come Panda Dome, in grado di neutralizzare questi attacchi.
+    Se il tuo computer dovesse infettarsi e non disponi di una copia di backup dei file, la nostra raccomandazione è di non pagare il riscatto. Pagare serve solo a trasformare il malware in un modello di business redditizio e a contribuire al successo di questo tipo di attacco.
