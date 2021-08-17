@@ -1,0 +1,33 @@
+Cryptojacking: definizione
+
+Il cryptojacking (o mining dannoso di criptovalute) è l'utilizzo di un dispositivo di terzi per finalità di mining di valute digitali. Si infiltra in un computer, uno smartphone o una rete informatica, non per accedere ai dati, ma per effettuare il mining di criptovalute utilizzando dispositivi altrui.
+Perché succede?
+
+Il mining delle criptovalute è un'attività complessa che utilizza molte risorse, sia energetiche che di calcolo. Pertanto, gli hacker hanno sviluppato un modo più semplice di compiere tale operazione: utilizzano i computer altrui per eseguire i calcoli richiesti (accollando ad altri il costo della bolletta elettrica) in cambio di valute digitali.
+Come si infetta un computer?
+
+Ci sono diversi modi possibili in cui il cryptojacking può sfruttare i tuoi computer, ma i più frequenti sono:
+1. Malware
+
+I cybercriminali hanno molti modi a disposizione (via e-mail, quando installi un'applicazione, attivando software nascosto, ecc.) per infiltrare un malware che può prendere il controllo del tuo dispositivo, sfruttarne la CPU ed estrarre criptovalute a tua insaputa.
+2. Siti web e browser
+
+Una pratica sempre più frequente è quella riportata di seguito: alcuni siti web, senza informare gli utenti, offrono la tua connessione Internet per il mining, defraudando gli utenti i cui computer sono messi al servizio di terzi. Attraverso il browser, il tuo computer e la tua larghezza di banda vengono utilizzati per generare nuove criptomonete.
+Rischi associati
+
+Il pericolo maggiore del cryptojacking non riguarda solo l'accesso ai personal computer di casa, ma anche la possibilità di saturare tutti i computer di un'azienda, con una serie di conseguenze negative:
+Consumo delle risorse
+
+Le aziende finiscono per ricevere enormi bollette elettriche, in quanto il cryptojacking cerca di sfruttare quanto più possibile i computer, usandoli ogni volta che può.
+Problemi tecnici
+
+I normali computer non sono progettati per funzionare durante il mining di criptovalute. Se il cryptojacking infetta un dispositivo, creerà problemi come la perdita di produttività e spese aggiuntive: sarà necessario un supporto tecnico o anche la sostituzione del computer.
+Cybersicurezza aziendale
+
+Anche se il furto di dati potrebbe non essere tra le priorità dei responsabili del cryptojacking, il fatto che questi tipi di criminali si siano infiltrati nei computer rappresenta una grave violazione della sicurezza informatica aziendale.
+Come proteggersi
+
+    Esegui frequenti valutazioni del rischio per identificare possibili vulnerabilità.
+    Aggiorna frequentemente tutti i sistemi aziendali, valutando la disinstallazione del software non utilizzato.
+    Proteggi i browser Web sugli endpoint con componenti aggiuntivi specifici per la protezione contro il mining di criptovalute bloccando gli script dannosi.
+    Indaga attentamente i picchi per alcuni problemi IT legati all'uso anomalo della CPU. Se molti dipendenti segnalano prestazioni lente o surriscaldamento dei dispositivi, la tua azienda potrebbe essere vittima di cryptojacking.
