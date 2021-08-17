@@ -1,0 +1,73 @@
+Rootkit: definizione
+
+Originariamente, nel contesto dei sistemi di tipo UNIX, un rootkit era un gruppo di strumenti appartenenti al sistema operativo stesso, come netstat, passwd e ps, che venivano modificati da un intruso per ottenere un accesso illimitato al computer di destinazione, senza che questa intrusione venga rilevata dall'amministratore di sistema.
+
+Nell'ambito della terminologia di sistema UNIX, l'amministratore di sistema era chiamato "root", da qui il termine generico per questi strumenti, che rimanevano nascosti nel sistema una volta ottenuti i privilegi di root.
+
+I sistemi Windows sono oggi i sistemi operativi più diffusi, tuttavia il concetto rimane lo stesso.
+Che cos'è un rootkit?
+
+Un rootkit di Windows è un programma che nasconde determinati elementi (file, processi, chiavi del Registro di sistema di Windows, indirizzi di memoria, connessioni di rete, ecc.) da altri programmi o dal sistema operativo.
+
+Come si può vedere, questa definizione non rappresenta di per sé alcun tipo di effetto dannoso sul sistema: è una tecnologia che può essere utilizzata per scopi costruttivi e anche distruttivi.
+Quale pericolo viene presentato dai rootkit?
+Contrariamente a quanto si crede, i rootkit non sono strumenti che possono essere usati per esporre un computer a un rischio.
+Rootkit in UNIX
+
+Nei sistemi UNIX, i rootkit sono utilizzati come un modo per garantire l'accesso continuo a un computer remoto che è stato precedentemente compromesso al fine di, ad esempio:
+
+    Installare Trojan backdoor attraverso i quali è possibile accedere al computer.
+    Nascondere le modifiche apportate alla configurazione del computer.
+    Nascondere i log lasciati come record di intrusione nel sistema.
+
+Rootkit in Windows
+
+Per i sistemi Windows l'obiettivo rimane simile: nascondere l'esistenza di altri elementi all'interno del computer, in modo che sia la loro presenza sia l'esecuzione non vengano rilevate dagli occhi dell'utente e nemmeno dal software di sicurezza stesso. Se questi elementi sono virus, il proprietario del computer si trova di fronte a un problema veramente serio.
+
+Questo fatto è perfettamente in linea con l'attuale dinamica del malware. Dato che lo scopo del malware è quello di portare avanti reati informatici con l'obiettivo finale di ottenere un guadagno economico, è della massima importanza che venga rilevato il meno possibile. In questo modo, il malware rimarrà attivo all'interno del computer più a lungo possibile, restando per tutto il tempo inosservato.
+Rootkit per buone cause
+
+Sebbene ci siano implicazioni che devono essere attentamente considerate, ci sono potenziali benefici nell'utilizzo dei rootkit, che possono essere legittimamente applicati alle seguenti aree:
+
+    Monitoraggio dei dipendenti.
+    Protezione della proprietà intellettuale.
+    Protezione dei programmi da attività malware o errori dell'utente (eliminazione accidentale, ad esempio).
+
+Quali sono i diversi tipi di rootkit?
+
+I rootkit possono essere classificati in base alle seguenti caratteristiche:
+Persistenza:
+
+Un rootkit persistente viene attivato ogni volta che si avvia il sistema. Per fare ciò, deve memorizzare il suo codice in qualche modo all'interno del computer e deve anche avere un modo per avviarsi automaticamente.
+
+Al contrario, un rootkit non persistente non è in grado di avviarsi automaticamente dopo un riavvio del sistema.
+Modalità di esecuzione:
+
+Modalità utente: questo tipo di rootkit aggancia le chiamate di sistema e filtra le informazioni restituite dalle API (Application Programming Interface).
+
+Modalità Kernel (nucleo del sistema operativo): questi rootkit modificano le strutture dei dati del kernel, oltre ad agganciare le API del kernel stesso.
+Come posso proteggermi dai rootkit?
+
+Le seguenti tecniche possono essere utilizzate per rilevare l'esistenza di rootkit all'interno di un sistema:
+Rilevamento basato su firma:
+
+Tecnologia matura che è stata utilizzata con successo dalle aziende antivirus da molti anni. Questa tecnologia si basa sulla scansione di file e sul confronto con una raccolta di firme di malware noto.
+Rilevamento euristico o basato sul comportamento:
+
+Identifica i rootkit riconoscendo eventuali deviazioni nella normale attività del computer.
+Rilevamento per confronto:
+
+Confronta i risultati restituiti dal sistema operativo con quelli ottenuti tramite chiamate di basso livello - se vengono rilevate differenze, sul sistema è presente un rootkit.
+Rilevamento basato sull'integrità:
+
+Mostra l'esistenza di un rootkit confrontando i file e la memoria con uno stato di prova ritenuto affidabile.
+
+Ognuna di queste tecniche ha i suoi limiti e per questo motivo si consiglia vivamente di integrare varie tecnologie differenti. È inoltre necessario tenere conto del fatto che alcuni rootkit sono espressamente progettati per evitare il rilevamento da parte delle società antivirus che guidano il mercato.
+
+La prima linea di difesa contro i rootkit consiste nel impedire loro di entrare nel tuo computer. Per fare ciò, tieni presenti i seguenti consigli di base su come proteggersi dai malware:
+
+    Installa una buona soluzione anti-malware sul tuo computer e mantienila sempre attiva e aggiornata.
+    Installa un firewall che proteggerà da accessi non autorizzati al tuo computer.
+    Assicurati sempre che le applicazioni installate sul tuo computer siano aggiornate e ricordati di installare le patch di sicurezza fornite dai produttori.
+
+Tuttavia, il compito di proteggersi dai rootkit non deve essere preso alla leggera e non può essere limitato a una serie di misure di protezione generiche. 
