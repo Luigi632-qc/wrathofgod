@@ -1,0 +1,24 @@
+Petya/GoldenEye (noto anche come NotPetya) è il nome di un attacco ransomware su larga scala lanciato nel 2017. Progettato per colpire i dispositivi Microsoft Windows, Petya infettava il record di avvio principale del computer attaccato per eseguire un payload in grado di crittografare la tabella di allocazione dei file del disco rigido, impedendo a Windows di avviarsi correttamente.
+
+Pertanto, i computer infettati si bloccavano dopo il riavvio e Petya richiedeva il pagamento di un riscatto in criptovaluta per ripristinare l'accesso al sistema.
+Cronologia degli attacchi
+
+Petya fu scoperto per la prima volta nel 2016, ma solo il 27 giugno 2017 fu lanciato un massiccio attacco informatico usando una variante del ransomware che si diffuse in oltre 60 paesi. La minaccia, distribuita tramite allegati e-mail dannosi, fu individuata per la prima volta in Ucraina, dove secondo Microsoft furono colpiti oltre 12.500 computer. Da allora, Petya si è diffusa in almeno altri 64 paesi, tra cui Russia, Polonia, Italia e Germania.
+
+Il 28 giugno di quell’anno, Microsoft ha pubblicato un post in cui ha affermato che l'obiettivo dell'attacco era il software M.E.Doc, un programma di preparazione fiscale utilizzato come vettore di propagazione.
+
+All'inizio di luglio, il gruppo dietro l'attacco ha fatto la sua prima dichiarazione pubblica, pubblicata sul servizio di annunci DeepPaste, disponibile solo su Tor. Nel messaggio, gli autori di Petya hanno offerto la chiave di crittografia privata utilizzata nell'attacco in cambio di 100 bitcoin, l'equivalente di oltre 250.000 dollari. I danni totali da Petya, come stimato dalla Casa Bianca, hanno raggiunto 10 miliardi di dollari e l'attacco è stato ritenuto legato ai servizi di intelligence della Russia.
+Funzionamento
+
+Petya si è propagato tramite l'exploit EternalBlue, che si ritiene sia stato sviluppato dalla National Security Agency (NSA) degli Stati Uniti, ed è stato utilizzato all'inizio dell'anno dal ransomware WannaCry. Oltre a crittografare i file sul computer compromesso, questa versione del malware era caratterizzata dalla crittografia dell'MBR quando disponeva delle autorizzazioni di amministratore, bloccando così l'accesso al computer.
+
+È stato distribuito come una DLL con un'esportazione denominata con un parametro diverso per ciascuna infezione, generato all'avvio del processo di crittografia. Durante l'esecuzione, Petya crittografava determinati file su unità di sistema compromesse. Inoltre, se disponeva di autorizzazioni di amministratore, crittografava anche il settore di avvio del sistema, impedendo l'accesso al computer a meno che non venisse immessa una chiave di decrittografia.
+
+Questa variante creava un'attività pianificata con cui arrestare il computer in un secondo momento. Dopo aver riavviato il computer, Petya mostrava una finta finestra che indicava che il problema era stato risolto. In seguito, mostrava la finestra alla ricerca del riscatto.
+Come proteggersi da Petya
+
+    Mantieni aggiornati il tuo sistema operativo e il software di sicurezza e assicurati che il firewall e le funzionalità di sicurezza della tua soluzione antivirus siano abilitati.
+    Presta attenzione ai documenti contenuti nelle e-mail provenienti da mittenti non attendibili.
+    Implementa barriere di sicurezza avanzate, come Panda Dome, con protezione antivirus e anti malware.
+    Esegui scansioni di tutte le e-mail in entrata e in uscita per rilevare eventuali minacce e filtrare i file eseguibili per impedire che arrivino agli utenti finali.
+    Effettua backup periodici dei tuoi dati e assicurati che funzionino correttamente e non siano accessibili ad altri sulla rete.
