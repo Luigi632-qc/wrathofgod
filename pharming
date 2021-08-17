@@ -1,0 +1,19 @@
+“Pharming” è un neologismo basato sulle parole “farming” e “phishing”. Può avvenire cambiando il file host sul computer della vittima o sfruttando una vulnerabilità nel software del server DNS. I server DNS sono responsabili della risoluzione dei nomi Internet nei loro indirizzi IP reali. I server compromessi sono definiti “avvelenati”.
+
+Negli ultimi anni, sia il pharming che il phishing sono stati utilizzati per ottenere informazioni che consentono agli hacker di effettuare furti di identità online e sono diventati una delle principali preoccupazioni per le aziende che ospitano siti di commercio elettronico o di banche.
+Come funziona il pharming?
+
+Poiché gli utenti sono diventati più consapevoli dei pericoli delle frodi di tipo phishing, alcuni hacker hanno abbandonato l’idea di cercare di ingannare le loro vittime e si sono invece dati al pharming, che comporta l’avvelenamento della cache del server DNS.
+
+Internet utilizza i server DNS per risolvere nomi di dominio, ad esempio www.pandasecurity.com, in indirizzi IP numerici utilizzati per localizzare servizi e dispositivi.
+
+Come parte di un attacco di avvelenamento DNS, un hacker prende di mira un server DNS e altera l’indirizzo IP associato al nome scritto del sito web. Ciò significa che un hacker può reindirizzare gli utenti verso un sito web dannoso, anche quando l’utente ha digitato il nome corretto nella barra degli indirizzi del browser.
+Come proteggersi
+
+Per proteggersi dagli attacchi di pharming, le aziende dovrebbero incoraggiare i dipendenti a inserire i dati solo in siti web protetti con HTTPS. È inoltre importante implementare software antivirus in tutti i dispositivi aziendali e avere tutti i file di firma dei virus aggiornati, così come tutte le patch di sicurezza fornite da un ISP di fiducia.
+
+Inoltre, a differenza degli attacchi di phishing, che spesso si rivolgono a servizi specifici, il pharming può colpire un numero molto maggiore di utenti. Non si tratta infatti di un singolo attacco, come nel caso delle e-mail di phishing, ma rimane in attesa che un utente acceda alla propria banca online. Il miglior ostacolo a questo tipo di minaccia è una soluzione di sicurezza avanzata.
+
+Tuttavia, un altro pericolo del pharming risiede nei server proxy anonimi. Molti utenti che vogliono nascondere la loro identità (il loro indirizzo IP) quando sono su Internet usano i server proxy online in modo che la connessione avvenga attraverso l’IP del server, non il proprio.
+
+Il problema è che uno di questi server proxy potrebbe essere stato avvelenato da DNS, quindi se un utente dovesse tentare di visitare il sito web della propria banca, potrebbe entrare in un sito fasullo, anche se il sistema DNS locale funziona correttamente.
