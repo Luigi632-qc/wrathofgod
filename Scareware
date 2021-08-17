@@ -1,0 +1,20 @@
+Lo scareware è un tipo di malware che utilizza il social engineering per generare panico o preoccupazioni o per convincere gli utenti che sussiste una minaccia specifica per indurli a installare o acquistare software non richiesti. Questa minaccia è connessa a falsi programmi o software antivirus per la disinfezione e il ripristino.
+
+Nella maggior parte dei casi, il virus menzionato è fittizio e il software consigliato non funziona o installa il vero malware. Gli scareware possono anche essere applicazioni o virus progettati per ingannare gli utenti e causare panico o preoccupazione.
+Come funziona
+
+Questi tipi di programmi esasperano il livello della minaccia, saturando gli utenti con avvisi continui. Inoltre, il software che offrono intima ai programmi di sicurezza reali di ingannare gli utenti.
+
+La maggior parte degli attacchi di scareware si attiene allo stesso schema. Finestre pop-up che avvisano ripetutamente che sono stati rilevati file pericolosi o materiali pornografici nel computer. Continuano ad apparire incessantemente finché l’utente non fa clic su “rimuovi tutte le minacce” o si registra per acquistare il presunto software antivirus.
+
+Altre varianti di scareware inducono gli utenti a disinstallare il proprio software antivirus o a disabilitare il firewall. Poiché i prodotti antivirus includono generalmente la protezione per impedire che altri programmi li disinstallino, lo scareware ricorre al social engineering per convincere gli utenti a disabilitare le funzionalità, che in caso contrario impedirebbero al malware di essere eseguito.
+
+Se il messaggio antivirus non proviene da un programma noto e installato personalmente, non fare clic sulla finestra pop-up. La cosa più utile da fare è arrestare il computer ed eseguire poi un’analisi di sicurezza con il proprio software antivirus che sarà in grado di rilevare e neutralizzare questa minaccia.
+Winwebsec e altri esempi di scareware
+
+Negli ambienti Windows, il termine “Winwebsec” si riferisce al malware che punta agli utenti di questo sistema operativo e genera falsi avvisi simili a quelli del software antivirus originale.
+
+Uno dei casi più comuni è SpySheriff, un tipo di malware che imita l’antispyware e prova a spingere gli utenti ad acquistare un programma, avvisando ripetutamente della presenza di una falsa minaccia. È particolarmente difficile rimuovere questo software, poiché nasconde i suoi componenti nella cartella “Ripristino di sistema” e blocca anche alcuni degli strumenti dell’amministratore. Un altro esempio di scareware è Smart Fortress, che avvisa gli utenti della presenza di virus nel computer e chiede loro di acquistare un servizio di disinfezione fake.
+Scareware e altre minacce
+
+SpySheriff semplifica il passaggio da spyware a scareware. Afferma di eliminare la minaccia, ma in realtà gli avvisi stessi fanno parte dell’attacco. Questo malware accompagna spesso le infezioni del trojan SmitFraud. Analogamente, lo scareware può diffondersi tramite il phishing.
