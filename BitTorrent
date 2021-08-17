@@ -1,0 +1,19 @@
+BitTorrent è il nome di un protocollo di comunicazione per la condivisione di file peer-to-peer (P2P) che viene utilizzato per distribuire dati e file elettronici su Internet. BitTorrent è uno dei protocolli più popolari per il trasferimento di file di grandi dimensioni, ad esempio file video digitali contenenti programmi TV o clip video o file audio digitali.
+Come funziona
+
+Anziché scaricare un file da un singolo server di origine o da più server mirror, BitTorrent consente agli utenti di unirsi a un gruppo di host per caricare/scaricare l'uno dall'altro i diversi pacchetti o pezzi che compongono il file contemporaneamente. Dato che ogni peer riceve un nuovo pezzo del file, diventa una fonte (o seme) di quel pezzo per altri peer, sollevando il seme originale dal dover inviare quel pezzo a ogni computer o utente che ne desidera una copia.
+
+In questo modo, ciascun gruppo di utenti si alleggerisce a vicenda nell'attività di distribuzione dei file, liberando altri utenti che potranno così condividere nuovi file. Tutto ciò si traduce in un sistema più efficace per la condivisione di file su reti con larghezze di banda limitate. Inoltre, i tracker BitTorrent forniscono un elenco di file disponibili per il trasferimento e consentono al client di trovare i semi che potrebbero trasferire i file.
+Rischi
+
+Alcune varianti di ransomware, come TorrentLocker, sfruttano le reti P2P per diffondersi utilizzando descrizioni di file false. TorrentLocker, scoperto nel 2014, è un Trojan ransomware rivolto ai sistemi Microsoft Windows. Crittografa i file della vittima in modo simile a CryptoLocker implementando un codice a blocchi simmetrico AES.
+
+The Pirate Bay è uno dei siti torrent più popolari al mondo. Dopo essere stato chiuso, questo sito è rispuntato più volte con nomi diversi. Nel 2015, una banda di cyber-criminali ha approfittato della confusione per creare un sito mirror di The Pirate Bay e reindirizzare più siti WordPress verso di esso iniettandoli con codice dannoso. Questi URL dannosi non conducevano a un sito di download. Quando qualcuno faceva clic sul link, un malware ne infettava il computer e registrava le informazioni personali del proprietario, come ad esempio coordinate bancarie o password, per poi inviarle in un secondo momento ai criminali.
+
+Proprio nello stesso anno, uTorrent, uno dei client BitTorrent più popolari sul web, è stato fonte di enormi controversie, con molti utenti che si lamentavano del fatto che lo strumento avesse installato un PUP (programma potenzialmente indesiderato) sui loro sistemi senza il loro consenso. Tale programma era EpicScale, un software di mining Bitcoin che consuma le risorse di sistema.
+Misure preventive
+
+    Scarica programmi da siti ufficiali e legittimi e non dai siti di condivisione file P2P.
+    Se, nonostante tutte le raccomandazioni, scegli di non utilizzare uno di questi siti, ci sono forum come Torrent Freak in cui è possibile trovare le informazioni più aggiornate sulle potenziali minacce e sui siti di torrenting sicuri.
+    Assicurati di prestare molta attenzione alle finestre di dialogo visualizzate dalla procedura guidata di installazione di tutti i programmi che installi, nel caso qualcuno tenti di inserire software indesiderato in grado di consumare le risorse del tuo computer o di eseguire altre azioni dannose.
+    Infine, proteggiti da tutti i tentativi di introdurre malware nel tuo computer utilizzando una soluzione antivirus professionale in grado di analizzare tutti i download e i file installati.
