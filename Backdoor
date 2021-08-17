@@ -1,0 +1,24 @@
+A volte, le backdoor possono essere installate volontariamente per fornire accesso agli utenti remoti. Tuttavia, quando il termine si applica al malware, le backdoor rappresentano virus che gli hacker utilizzano per accedere alle funzioni di un computer senza essere scoperti e che operano in background. Questi virus sono in realtà una combinazione di diverse minacce alla sicurezza, alcune delle quali possono essere controllate a distanza.
+Come si diffondono?
+
+Le backdoor sono spesso introdotte sui sistemi grazie ad altri programmi dannosi come Trojan, virus o perfino spyware. Esse riescono ad ottenere l'accesso senza che gli amministratori ne siano a conoscenza, con il fine di infettare le sessioni di tutti gli utenti della rete compromessa. Alcune minacce sono talvolta diffuse da utenti con privilegi per ottenere l'accesso in un secondo momento.
+
+Alcune backdoor sono integrate in applicazioni specifiche. A volte i programmi legittimi possono avere vulnerabilità che non sono documentate e possono consentire l'accesso remoto. In questi casi, gli aggressori hanno ancora bisogno di un mezzo di contatto con il computer compromesso per ottenere un accesso non autorizzato al sistema.
+
+Gli utenti stessi possono inavvertitamente installare backdoor sui loro computer. Un virus backdoor può essere allegato alle applicazioni di file sharing o alle e-mail. Tecniche simili all'utilizzo di scareware e ransomware.
+
+Alcune backdoor sfruttano le vulnerabilità specifiche dei sistemi remoti, sia su computer che in rete.
+Quali danni possono fare?
+
+I virus che sfruttano le backdoor hanno spesso capacità dannose aggiuntive, come l'acquisizione delle schermate, la registrazione delle digitazioni o l'infezione e la crittografia dei file. Una backdoor consente a un intruso di creare, eliminare, rinominare, modificare o copiare qualsiasi file, eseguire comandi, modificare le impostazioni di sistema, eliminare le voci di registro di sistema di Windows, eseguire, controllare e terminare le applicazioni o installare nuovo malware.
+
+Allo stesso modo, può consentire agli aggressori di prendere il controllo dei dispositivi hardware, modificare le relative impostazioni, riavviare o spegnere un computer senza autorizzazione e rubare dati riservati, password, dati di login, informazioni personali e altri documenti importanti.
+
+Alcuni attacchi backdoor sfruttano la registrazione dei movimenti degli utenti sul Web e delle abitudini di navigazione, oppure infettano i file, danneggiando il sistema e le applicazioni.
+Esempi di attacchi backdoor
+
+Un esempio di questo tipo è Sticky Attacks, rilevato da PandaLabs nel 2017. In questo caso, gli aggressori hanno utilizzato un attacco di forza bruta contro un server con Remote Desktop Protocol (RDP), riuscendo ad ottenere le credenziali per accedere al computer. Poi, i cybercriminali hanno usato gli script e gli strumenti del sistema operativo per passare inosservati e installare una semplice backdoor.
+
+Anche se le vittime si rendono conto dell'attacco e cambiano le password per il desktop remoto, gli aggressori possono utilizzare le chiavi Sticky Keys per accedere al computer senza dover reinserire le credenziali di accesso.
+
+Un altro esempio recente è DoublePulsar, uno strumento per la realizzazione di backdoor sviluppato dalla U.S. National Security Agency (NSA) sottratto e utilizzato dal gruppo di hacker Shadow Brokers all'inizio del 2017. Si pensa che questo strumento abbia infettato più di 200.000 computer con Microsoft Windows in poche settimane ed è stato utilizzato insieme a EternalBlue nell'attacco WannaCry del maggio 2017.
