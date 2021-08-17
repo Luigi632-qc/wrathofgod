@@ -1,3 +1,3 @@
 # wrathofgod
-Guida puramente informativa sulla sicurezza informatica
+Guida puramente informativa sulla sicurezza informatica.
 Welcome to Mossad.
