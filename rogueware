@@ -1,0 +1,25 @@
+Il termine rogueware, software rogue o software di sicurezza rogue, si riferisce a una forma di software dannoso che induce gli utenti a credere che ci sia un virus sul proprio computer. Successivamente, viene richiesto denaro in cambio della fornitura di uno strumento di rimozione malware finto, che in realtà introduce malware nel computer.
+
+Il rogueware può essere considerato una forma di ransomware ed è spesso collegato alle grandi reti della criminalità informatica, in cui gli hacker distribuiscono kit di Trojan e vengono pagati per ogni installazione riuscita.
+Vettori di infezione
+
+Il software rogue sfrutta errori umani e manipolazioni per bypassare le misure di sicurezza. Quando la vittima visita un sito Web appositamente predisposto, viene visualizzata una finestra di dialogo che avvisa di un'infezione da virus e offre una soluzione antivirus (falsa) per risolvere il problema. Questo mira ad allarmare la vittima e suscitare una sua risposta frettolosa e incurante: l'acquisto della soluzione.
+
+Alcuni distributori di malware utilizzano tecniche di ottimizzazione dei motori di ricerca (SEO) black hat per spingere gli URL infetti in cima ai risultati dei motori di ricerca relativi alle notizie recenti. In questi casi, se la vittima fa clic su un URL dannoso, viene reindirizzata attraverso una serie di siti prima di arrivare a una pagina di destinazione che segnala la presenza di un’infezione e spinge il download di una "prova" del programma rogue.
+
+Tuttavia, alcuni software di sicurezza rogue si propagano sui computer degli utenti come download drive-by che sfruttano le vulnerabilità della sicurezza nei browser Web, nei visualizzatori PDF o nei client di posta elettronica.
+
+Il cold-calling, ovvero la chiamata a freddo, attraverso servizi come Skype è diventato anch’esso un vettore per la distribuzione di questo tipo di malware, con i chiamanti che spesso affermano di far parte del "Supporto Microsoft" o di un'altra organizzazione legittima.
+Come funzionano i rogueware
+
+Una volta installato, il software di sicurezza non autorizzato può tentare di indurre l'utente ad acquistare un servizio o software aggiuntivo in vari modi:
+
+    Avvisando l'utente del rilevamento falso o simulato di malware o materiale pornografico sul disco rigido o sull'indirizzo IP del suo computer.
+    Visualizzando un messaggio che simula un arresto anomalo del sistema e il riavvio.
+    Disattivando in modo selettivo parti del sistema per impedire all'utente di disinstallare il malware o assicurare che venga immediatamente reinstallato.
+    Alcune varianti di rogueware possono anche impedire l'esecuzione di programmi anti malware e disabilitare gli aggiornamenti automatici del software di sistema.
+
+I messaggi pop-up o pop-under sul desktop non sono più un elemento costante dei sistemi operativi. Se i pop-up appaiono anche quando l’utente non è attivo sul computer, si tratta sicuramente di un segnale da non sottovalutare.
+Rogueware e scareware
+
+Alcuni software di sicurezza rogue si sovrappongono con scareware o ransomware presentando offerte per risolvere problemi urgenti alle prestazioni del computer o eseguire operazioni di pulizia essenziali sul computer, oltre a spaventare l'utente con la visualizzazione di avvisi pop-up dall’aspetto autentico che possono simulare le effettive notifiche di sistema.
