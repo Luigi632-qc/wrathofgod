@@ -1,0 +1,26 @@
+Il termine “keylogger” si riferisce a un programma dannoso che registra di nascosto la sequenza di tasti selezionata sul computer da un utente. I keylogger sono utilizzati per accedere in modo illegittimo a informazioni confidenziali, come dati personali, dettagli della carta di credito, password, ecc.
+Tipi di keylogger:
+
+Sussistono due tipi di keylogger a seconda del metodo utilizzato per registrare la sequenza di tasti: software e hardware.
+
+I keylogger basati sull’hardware sono insoliti, poiché richiedono l’accesso fisico al dispositivo della vittima.
+
+I keylogger basati sul software non solo sono comuni, ma coinvolgono qualsiasi dispositivo che non è protetto in modo adeguato. In genere, i keylogger sono installati nei dispositivi insieme ad altri programmi dannosi, quali trojan o virus. Ad esempio, un hacker potrebbe indurre una vittima a fare clic su un collegamento dannoso da cui il keylogger viene scaricato in background.
+
+Diversamente da altri tipi di malware che eliminano i dati o crittografano i file e richiedono successivamente un riscatto, i keylogger sono progettati per passare inosservati mentre registrano le azioni dell’utente, rendendone difficile il rilevamento.
+
+Sono progettati per raccogliere i dati confidenziali inseriti tramite le sequenze di tasti, in particolare i numeri di conto bancari, le password e i PIN. Grazie a queste informazioni, gli hacker possono quindi impersonificare l’utente per rubare informazioni riservate o condurre transazioni finanziarie fraudolente.
+Esempi di keylogger
+
+Il caso di PunkeyPOS evidenzia gli effetti devastanti dei keylogger. Questo malware ha infettato i terminali dispositivi di pagamento (POS) di centinaia di ristoranti (principalmente in USA), raccogliendo i dati bancari di migliaia di clienti.
+
+Un altro esempio, con finalità diversa, è stato quello di EyePyramid, un campagna di spionaggio informatico che ha minacciato la sicurezza di svariate agenzie di stato italiane agli inizi del 2017. Questo malware invasivo è stato utilizzato da hacker professionisti per accedere ai dispositivi delle diverse figure pubbliche che stavano spiando.
+
+L’attività iniziò nel 2012, coinvolgendo circa 18.327 utenti e rubando 1.793 password mediante un keylogger. Circa 87 GB di dati in totale. Fra le vittime erano inclusi gli ex primi ministri Matteo Renzi e Mario Monti, nonché l’ex presidente della Banca Centrale Europea, Mario Draghi, ed altre figure di rilievo.
+Come proteggersi
+
+È ovvio che l’utilizzo dei keylogger da parte di professionisti comporta che società e aziende implementino sistemi capaci di garantire la sicurezza dei dati. Le piattaforme di sicurezza informatica intelligenti progettate da Panda Security possono rilevare, bloccare e gestire qualsiasi attacco prima che raggiunga il bersaglio.
+
+Il focus dinamico, basato sui principi dell’intelligenza contestuale, permette alle aziende di anticipare i comportamenti dannosi e prevenire il furto dei dati.
+
+Per garantire che i sistemi non siano stati infiltrati da un keylogger, è possibile eseguire un’analisi completa con l’ultima versione di Panda Antivirus. Se durante un’analisi viene rilevato un programma dannoso, verrà automaticamente proposta un’opzione per rimuoverlo. A tale scopo, è sufficiente effettuare le operazioni indicate nel programma.
