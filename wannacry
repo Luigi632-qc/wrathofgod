@@ -1,0 +1,23 @@
+WannaCry è il nome di un attacco ransomware lanciato in tutto il mondo nel 2017 dal cryptoworm WannaCry.
+
+Progettato per infettare computer con sistema operativo Microsoft Windows, crittografava i dati e richiedeva pagamenti di riscatto nella criptovaluta Bitcoin. L'attacco fu bloccato nel giro di pochi giorni dalla scoperta grazie a patch di emergenza rilasciate da Microsoft e alla scoperta di un "kill switch" che impediva ai computer infetti di diffondere ulteriormente il malware. Si stima che l'attacco abbia colpito più di 200.000 computer in 150 paesi.
+Tempistica d' attacco
+All'inizio della giornata lavorativa del 12 maggio 2017, Adaptive Defense 360 ha iniziato a rilevare e bloccare con successo un gran numero di attacchi che sfruttavano la vulnerabilità EternalBlue per introdurre il malware WannaCry sui computer. La portata degli attacchi ha raggiunto praticamente ogni angolo del globo.
+
+L'attacco ransomware ha colpito alcuni sistemi Microsoft Windows vulnerabili, crittografando tutti i loro file e quelli delle unità di rete a cui erano connessi e infettando altri sistemi Windows vulnerabili sulla stessa rete. Il processo si è concluso con una richiesta di riscatto per la decrittazione, dietro il pagamento di 300 dollari.
+
+Inoltre, l'avvio di computer vulnerabili non ancora compromessi il lunedì successivo all'epidemia ha scatenato una seconda ondata di attacchi. Molte aziende e istituti in Cina e Giappone sono state vittime di questa seconda ondata, comprese grandi società, bancomat e ospedali.
+Funzionamento
+
+La notevole potenza di questa campagna di attacco può essere impiegata per sfruttare una vulnerabilità diffusa di Windows. L'idea di sfruttare questo difetto è attribuita alla US National Security Agency (NSA), secondo documenti trapelati un mese prima dell'attacco, nell'aprile 2017.
+
+L'infezione non richiedeva l'intervento umano, come l'apertura di un’e-mail o il download di un file da Internet, per ottenere l'accesso a un sistema. Ciò ha permesso che l'attacco si svolgesse praticamente simultaneamente su tutto il pianeta e senza l'intervento degli utenti. È stato quindi un attacco massiccio senza barriere umane.
+
+L'infezione ha riguardato tutti i dispositivi Windows connessi sulla stessa rete che non erano stati aggiornati correttamente. L'infezione di un singolo computer poteva finire per compromettere l'intera rete aziendale.
+
+Molte soluzioni di protezione tradizionali volte a bloccare file dannosi non sono in grado di bloccare gli attacchi che sfruttano questa o altre vulnerabilità per l'accesso a computer e reti. Nel caso di WannaCry, questo ha fatto sì che il cyber-attacco riuscisse a diffondersi in un gran numero di paesi e a colpire un numero enorme di utenti (principalmente aziende e istituti pubblici).
+Come proteggersi da WannaCry
+
+Non tutte le aziende al mondo che non hanno applicato la patch di sicurezza per correggere la vulnerabilità sfruttata da WannaCry sono cadute vittima dell'attacco. Tuttavia, molte aziende hanno dovuto interrompere tutti i loro processi fino a quando non è stato implementato un aggiornamento della sicurezza, come misura precauzionale.
+
+In questo contesto, si può concludere che la soluzione a questo tipo di attacco deve implementare un approccio olistico e strutturalmente diverso rispetto ai prodotti tradizionali di sicurezza informatica. Questo è ciò che fa Panda DOME. La visibilità fornita dalla suite di prodotti di Panda Security e le sue funzionalità di prevenzione, rilevamento e correzione ci hanno permesso di rispondere immediatamente alla minaccia, proteggendo i computer degli utenti fin dai primissimi minuti dell'epidemia di malware. 
